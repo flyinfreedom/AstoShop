@@ -1,3 +1,4 @@
+import { ShoppingcartComponent } from './pages/shoppingcart/shoppingcart.component';
 import { ProductsService } from './services/products.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -12,7 +13,8 @@ import { ErrorComponent } from './pages/error/error.component';
 import { MenuComponent } from './widgets/menu/menu.component';
 import { FooterComponent } from './widgets/footer/footer.component';
 import { ProductComponent } from './pages/product/product.component';
-import { ShoppingcartComponent } from './pages/shoppingcart/shoppingcart.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ShoppingcartComponent } from './pages/shoppingcart/shoppingcart.compone
     MenuComponent,
     FooterComponent,
     ProductComponent,
-    ShoppingcartComponent
+    ShoppingcartComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

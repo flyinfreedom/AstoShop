@@ -1,3 +1,5 @@
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LayoutComponent } from './pages/layout/layout.component';
@@ -8,11 +10,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', component:LayoutComponent,
+    path: '', component: LayoutComponent,
     children: [
       { path: '', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
       { path: 'product', component: ProductComponent },
-      {path:'shop',component:ShoppingcartComponent  }
+      { path: 'shop', component: ShoppingcartComponent }
     ]
   },
   { path: 'error', component: ErrorComponent },

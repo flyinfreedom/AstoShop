@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   private _product:Product;
   constructor(private productServ:ProductsService) { 
   //  this._product = new Product({ name: 'test', });
-  
+    
   }
 
   ngOnInit() {

@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">連絡我們
+        <small><em>Contact</em></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a routerLink="">Home</a>
+        </li>
+        <li class="active">Contact</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <!-- Map Column -->
+    <div class="col-md-8">
+      <!-- Embedded Google Map -->
+      <iframe width="100%" height="400px" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.942869529419!2d121.5245134155768!3d25.10379518393968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae99f3eb999f%3A0xe42e3a9d8ee91f30!2zMTEx5Y-w5YyX5biC5aOr5p6X5Y2A5Lit5bGx5YyX6Lev5YWt5q61MTTomZ8!5e0!3m2!1szh-TW!2stw!4v1491042460165"></iframe>
+    </div>
+    <!-- Contact Details Column -->
+    <div class="col-md-4">
+      <h3>聯絡資訊</h3>
+      <p>
+        11155台北市士林區中山北路六段157巷14號
+      </p>
+      <p><i class="fa fa-phone"></i>
+        <abbr title="Phone">P</abbr>: (02)28358778</p>
+      <p><i class="fa fa-envelope-o"></i>
+        <abbr title="Email">E</abbr>: <a href="mailto:Service@gelateria.com">Service@gelateria.com</a>
+      </p>
+      <p><i class="fa fa-clock-o"></i>
+        <abbr title="Hours">H</abbr>: 11:00 AM ~ 9:30 PM</p>
+      <ul class="list-unstyled list-inline list-social-icons">
+        <li>
+          <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <h3>聯絡ASTO</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>名稱:</label>
+            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+            <p class="help-block"></p>
+          </div>
+        </div>
+        
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Email:</label>
+            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+          </div>
+        </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>內容:</label>
+            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message"
+              maxlength="999" style="resize:none"></textarea>
+          </div>
+        </div>
+        <div id="success"></div>
+        <!-- For success/fail messages -->
+        <button type="submit" class="btn btn-primary">送出訊息</button>
+      </form>
+    </div>
+
+  </div>
+</div>
